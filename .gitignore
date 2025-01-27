@@ -11,3 +11,5 @@ wheels/
 
 # Dotenv files
 .env
+
+carbon-txt-downloads/

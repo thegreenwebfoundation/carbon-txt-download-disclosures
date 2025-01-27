@@ -7,6 +7,10 @@ set dotenv-load
 default:
   just --list
 
+# run a command with uv, but with environment variables loaded from a dotenv file
+run *options:
+  uv run {{ options }}
+
 # run the tests, with the ability to pass in options
 test *options:
   uv run pytest {{ options }}
